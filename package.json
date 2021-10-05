@@ -4,7 +4,7 @@
   "description": "Service Authentification",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "NODE_ENV=test mocha",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
@@ -29,6 +29,8 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
     "husky": "^7.0.2"
   }
 }
