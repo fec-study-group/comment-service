@@ -26,7 +26,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci --ignore-scripts
+    - name: Upgrade NPM
+      run: npm install -g npm
+    - run: npm ci
     - run: npm i -g mocha
     - run: npm run build --if-present
     - run: npm test
