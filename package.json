@@ -30,7 +30,6 @@
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
     "chai": "^4.3.4",
-    "chai-http": "^4.3.0",
-    "husky": "^7.0.2"
+    "chai-http": "^4.3.0"
   }
 }
