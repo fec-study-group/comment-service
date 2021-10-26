@@ -6,11 +6,13 @@ WORKDIR /app
 
 # RUN git clone ...
 
-# COPY ./package.json ./
+COPY ./package.json ./
 
-# RUN npm install
+RUN npm install
 
 RUN npm i -g nodemon
+
+COPY . .
 
 EXPOSE 3000
 
